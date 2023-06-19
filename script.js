@@ -13,5 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
             top: offsetTop,
             behavior: "smooth"
         });
+
+
+        const navMenu = document.querySelector(".navbar-collapse");
+        if (navMenu.classList.contains("show")) {
+            navMenu.classList.remove("show");
+        }
     }
 });
